@@ -1,0 +1,22 @@
+{
+  "name": "molawn",
+  "version": "1.0.0",
+  "description": "Site for M&O Landscaping",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkeyshoulders/M-OLawn.git"
+  },
+  "author": "Matt Bledsoe mattbledsoe2@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monkeyshoulders/M-OLawn/issues"
+  },
+  "homepage": "https://github.com/monkeyshoulders/M-OLawn#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
