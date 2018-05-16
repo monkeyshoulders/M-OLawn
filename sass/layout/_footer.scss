@@ -1,0 +1,59 @@
+.footer {
+  background: $black;
+  color: $white;
+  padding: 5rem;
+  display: grid;
+  grid-template-areas:  'a a a' 'b b b';
+
+  &__heading {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+    grid-area: a;
+
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 4rem;
+    grid-area: b;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    &-logo {
+
+    }
+
+    &-address {
+        color: $white;
+        font-size: 1.75rem;
+
+        h4 {
+          margin: 0;
+          font-size: 2.5rem;
+          color: $yellow;
+        }
+
+    }
+
+    &-phem {
+
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.75rem;
+      }
+
+      h4 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: $yellow;
+      }
+    }
+  }
+}

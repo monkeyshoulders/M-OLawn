@@ -1,0 +1,13 @@
+.page-break {
+  background: #082d00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    color: #c6d92a;
+    padding: 2rem;
+    letter-spacing: 1.1px;
+    font-size: 1.5rem;
+  }
+}

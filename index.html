@@ -6,12 +6,13 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cardo:700|Nanum+Myeongjo:800|Vollkorn:700|Merriweather|Source+Serif+Pro:400,600" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>M&O Landscaping</title>
   </head>
   <body>
 
     <nav class="nav">
-      <img src="http://via.placeholder.com/150x100" alt="Man cutting grass" class="nav__hero">
+      <img src="http://via.placeholder.com/175x125" alt="Man cutting grass" class="nav__hero">
       <ul class="nav__list">
         <li class="nav__list-item"><a class="item-link" href="">Home</a></li>
         <li class="nav__list-item"><a class="item-link" href="">About</a></li>
@@ -36,53 +37,80 @@
 
     <section class="services">
       <h3 class="services__heading">Services we offer</h3>
-      <ul class="services__list">
-        <li class="list-item">Mowing, Edging, Blowing</li>
-        <li class="list-item">Hedge and Tree Trimming</li>
-        <li class="list-item">Fertilization, Seeding, and Hardscapes</li>
-      </ul>
-      <p class="services__text">see our services page for all our offerings</p>
+      <div class="services__boxes">
+        <article class="services__boxes-mow">
+          <img src="images/house.jpg" alt="">
+          <ul>
+            <li>Mowing</li>
+            <li>Edging</li>
+            <li>Blowing</li>
+          </ul>
+        </article>
+        <article class="services__boxes-tree">
+          <img src="images/house.jpg" alt="">
+          <ul>
+            <li>Hedge Trimming</li>
+            <li>Tree Trimming</li>
+            <li>Tree Removal</li>
+          </ul>
+        </article>
+        <article class="services__boxes-fertil">
+          <img src="images/house.jpg" alt="">
+          <ul>
+            <li>Fertilization</li>
+            <li>Seeding</li>
+            <li>Hardscapes</li>
+          </ul>
+        </article>
+      </div>
+      <a href="">see our services page for all our offerings</a>
     </section>
 
     <section class="page-break">
-      <h3 class="page-break__heading">We offer weekly and biweekly services for residential and business customers</h3>
+      <h3 class="page-break__heading">We offer weekly and biweekly services for residential and business customers. Call us to schedule your free estimate!</h3>
     </section>
 
     <section class="customers">
-      <ul class="customers__list">
-        <li class="customers__list--item">
-          <article class="list--content">
-            <h4 class="content--heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
-            <p class="content--review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
+      <div class="gallery js-flickity">
+        <div class="gallery-cell">
+          <article class="list-content">
+            <h4 class="list-content-heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
+            <p class="list-content-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
           </article>
-        </li>
-        <li class="customers__list--item">
-          <article class="list--content">
-            <h4 class="content--heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
-            <p class="content--review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
+        </div>
+        <div class="gallery-cell">
+          <article class="list-content">
+            <h4 class="list-content-heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
+            <p class="list-content-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
           </article>
-        </li>
-        <li class="customers__list--item">
-          <article class="list--content">
-            <h4 class="content--heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
-            <p class="content--review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
+        </div>
+        <div class="gallery-cell">
+          <article class="list-content">
+            <h4 class="list-content-heading">Rachel S. <br><sub><em>- Charlotte</em></sub></h4>
+            <p class="list-content-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati et, exercitationem eveniet quae nulla sunt saepe, eum eligendi optio odit! Temporibus, cumque, itaque! Autem doloribus et quos.</p>
           </article>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-      <img src="" class="footer__logo" alt="">
-      <div class="contact">
-        <h2 class="contact__heading">Contact Us:</h2>
-        <address class="contact__address">
-          PO Box 943<br>
+      <h2 class="footer__heading">Contact Us</h2>
+      <div class="footer__contact">
+        <img src="http://via.placeholder.com/350x200" class="footer__contact-logo" alt="">
+        <div class="footer__contact-address">
+          <h4>Address</h4>
+          PO Box 943 <br>
           Pineville, NC 28134
-        </address>
-        <a href="tel:7048911186" class="contact__tele">704.891.1186</a>
-        <a href="email:MandOLandscapingNC@gmail.com" class="contact__email">MandOLandscapingNC@gmail.com</a>
+        </div>
+        <div class="footer__contact-phem">
+          <h4>Phone</h4>
+          <a href="tel:7048911186" class="contact__tele">704.891.1186</a> <br>
+          <h4>Email</h4>
+          <a href="email:MandOLandscapingNC@gmail.com" class="contact__email">MandOLandscapingNC@gmail.com</a>
+        </div>
       </div>
     </footer>
 
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
