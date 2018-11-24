@@ -1,10 +1,8 @@
 .services {
   margin-top: 4rem;
-  padding: 9rem 7rem;
+  padding: 9rem 6rem;
   text-align: center;
   background: linear-gradient(#086700, $light-green);
-  border-top-left-radius: 80% 5%;
-  border-top-right-radius: 80% 5%;
   color: $white;
 
   &__heading {
@@ -21,7 +19,7 @@
     &-tree,
     &-fertil {
       margin: 2rem;
-      background: #016011;
+      background: #204f1f;
       padding: 3rem;
       border-radius: 15px;
 
@@ -38,6 +36,7 @@
         li {
           font-size: 2rem;
           transform: translateX(-1.5rem);
+          margin: 5px 0;
         }
       }
     }
@@ -46,6 +45,7 @@
   a {
     color: $white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 }
